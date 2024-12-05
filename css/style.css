@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,9 +10,7 @@ body {
     overflow-x: hidden;
 }
 
-a,
-a:link,
-a:visited {
+a {
     text-decoration: none;
     color: black;
 }
@@ -217,7 +213,7 @@ input::-ms-clear {
                 position: absolute;
                 top: 0;
                 left: 0;
-                background-image: url(../img/Dot.svg);
+                background-image: url(../img/cicule.svg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 width: 100%;
@@ -265,7 +261,7 @@ input::-ms-clear {
                 line-height: 150%;
                 letter-spacing: 0em;
                 color: #646a69;
-                opacity: 0.8px;
+                opacity: 0.8;
             }
         }
 
@@ -356,7 +352,7 @@ input::-ms-clear {
     }
 
     .swiper-slide {
-        background-image: url(../img/expert1.png);
+        background-image: url(../img/man2.png);
         background-size: cover;
         background-repeat: no-repeat;
         height: 100%;
