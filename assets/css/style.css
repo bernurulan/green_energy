@@ -44,7 +44,7 @@ input::-ms-clear {
 }
 .container {
   width: 100%;
-  max-width: 1206px;
+  max-width: 1216px;
   margin: 0 auto;
 }
 .wrapper {
@@ -63,10 +63,12 @@ input::-ms-clear {
   padding: 24px 0 94px;
 }
 .header .menu__nav {
-  padding-bottom: 96px;
   display: flex;
   align-items: center;
   gap: 32px;
+}
+.header .menu__nav a {
+  color: white;
 }
 .header .menu__button button {
   width: 129px;
@@ -74,6 +76,7 @@ input::-ms-clear {
 }
 .header .header__info {
   text-align: center;
+  margin-top: 96px;
 }
 .header .header__info .info__suptitle {
   display: flex;
@@ -141,12 +144,12 @@ input::-ms-clear {
   letter-spacing: -0.03em;
   text-align: center;
 }
-.swiper {
+.header .swiper {
   border-radius: 8px;
   width: 100%;
   height: 100%;
 }
-.swiper-slide {
+.header .swiper-slide {
   background: rgba(255, 255, 255, 0.24);
   width: 419px;
   padding: 24px 0 24px;
@@ -173,8 +176,11 @@ input::-ms-clear {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 100%;
-  background: #bef264;
+  background-image: url(../img/Dot.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 .solution__container hr {
   margin-top: 16px;
@@ -252,6 +258,8 @@ input::-ms-clear {
 .about .about__slider {
   margin-top: 96px;
   margin-bottom: 204px;
+  width: 100%;
+  height: 100%;
 }
 .about .info__numbers p {
   font-size: 48px;
@@ -277,6 +285,41 @@ input::-ms-clear {
   font-size: 18px;
   line-height: 144%;
   color: #646a69;
+}
+.expert .swiper-slide {
+  background-image: url(../img/expert1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 432px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
+}
+.expert .swiper-slide .expert__info {
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+}
+.expert .swiper-slide .expert__info .expert__name p {
+  font-weight: 500;
+  line-height: 150%;
+  color: #1d1f1e;
+}
+.expert .swiper-slide .expert__info .expert__proffesion p {
+  font-size: 14px;
+  line-height: 143%;
+  color: #646a69;
+}
+.expert .swiper-button-next,
+.expert .swiper-button-prev {
+  top: 4rem;
+}
+.expert .swiper-button-prev,
+.expert .swiper-rtl .swiper-button-next {
+  right: 5rem;
+  left: auto;
 }
 .join {
   background: #022c22;
@@ -428,7 +471,7 @@ input::-ms-clear {
   color: #1d1f1e;
 }
 .faq .accordeon__item .item__text {
-  width: 592px;
+  width: 542px;
 }
 .faq .accordeon__item .item__text p {
   line-height: 150%;
@@ -474,6 +517,38 @@ input::-ms-clear {
   margin: 24px 0 88px;
 }
 .testimonials .testimonials__text p {
+  font-size: 18px;
+  line-height: 144%;
+  color: #646a69;
+}
+.testimonials .testimonials__swiper .slider__item {
+  border-radius: 16px;
+  padding: 48px 64px;
+  box-shadow: 0 0 0 1px rgba(18, 105, 63, 0.08), 0 1px 2px 0 rgba(87, 92, 86, 0.16), 0 24px 24px -12px rgba(54, 74, 54, 0.06);
+  background: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.testimonials .testimonials__swiper .slider__item .slider__title {
+  margin: 24px 0 40px;
+}
+.testimonials .testimonials__swiper .slider__item .slider__title p {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  color: #1d1f1e;
+}
+.testimonials .testimonials__swiper .slider__item .slider__author {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: #1d1f1e;
+}
+.testimonials .testimonials__swiper .slider__item .slider__prof {
+  margin-top: 8px;
   font-size: 18px;
   line-height: 144%;
   color: #646a69;
@@ -566,4 +641,31 @@ input::-ms-clear {
   font-size: 14px;
   line-height: 143%;
   color: #646a69;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 320px;
+  }
+  .header .header__info .info__title p {
+    font-size: 50px;
+  }
+  .header .header__info .info__text p {
+    font-size: 14px;
+  }
+  .header .header__info .info__buttons .solution__button button {
+    width: 157px;
+    height: 46px;
+    font-size: 13px;
+  }
+  .header .header__info .info__buttons .get__button button {
+    width: 120px;
+    height: 46px;
+  }
+  .header .header__partners .partner__title {
+    width: 100%;
+  }
+  .header .header__partners .partner__title p {
+    font-size: 38px;
+    line-height: 110%;
+  }
 }
